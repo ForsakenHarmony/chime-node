@@ -1,0 +1,7 @@
+{
+  "name": "hashtag",
+  "description": "",
+  "routes": {
+    "GET /hashtag/:hashtag": "hashtag"
+  }
+}

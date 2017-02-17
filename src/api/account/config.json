@@ -1,0 +1,11 @@
+{
+  "name": "account",
+  "description": "",
+  "routes": {
+    "POST /account/register": "register",
+    "POST /account/authorize": "authorize",
+    "POST /account/profile": "update_profile",
+    "GET /account/tokens": "tokens",
+    "DELETE /account/tokens/:id": "delete_token"
+  }
+}

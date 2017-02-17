@@ -1,0 +1,7 @@
+{
+  "name": "timeline",
+  "description": "",
+  "routes": {
+    "GET /timeline": "timeline"
+  }
+}

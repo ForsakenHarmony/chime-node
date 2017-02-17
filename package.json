@@ -1,0 +1,25 @@
+{
+  "name": "chime-node",
+  "version": "0.1.0",
+  "description": "Chime written in node.js",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForsakenHarmony/chime-node.git"
+  },
+  "author": "ForsakenHarmony",
+  "license": "MIT",
+  "dependencies": {
+    "body": "^5.1.0",
+    "buble": "^0.15.2",
+    "co-body": "^4.2.0",
+    "debug": "^2.6.1",
+    "koa": "next",
+    "koa-bodyparser": "3",
+    "koa-compress": "next",
+    "koa-logger": "next",
+    "koa-response-time": "next",
+    "koa-router": "next",
+    "koa-static": "next"
+  }
+}

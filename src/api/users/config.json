@@ -1,0 +1,11 @@
+{
+  "name": "users",
+  "description": "",
+  "routes": {
+    "GET /users/:username": "profile",
+    "GET /users/:username/posts": "posts",
+    "GET /users/:username/comments": "comments",
+    "GET /users/:username/followers": "followers",
+    "GET /users/:username/following": "following"
+  }
+}

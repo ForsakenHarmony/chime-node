@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>chime</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>chime</h1>
+
+        <div id="docs"></div>
+
+    <script src="marked.min.js"></script>
+    <script src="fetch.min.js"></script>
+    <script>
+    fetch('api.md')
+      .then(function(response) {
+        return response.text();
+      }).then(function(text) { 
+        document.getElementById('docs').innerHTML = marked(text); 
+      });
+    </script>
+    </body>
+</html>

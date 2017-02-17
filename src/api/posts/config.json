@@ -1,0 +1,13 @@
+{
+  "name": "posts",
+  "description": "",
+  "routes": {
+    "GET /posts/:id": "get",
+    "GET /posts/:id/with_comments": "with_comments",
+    "POST /posts/create": "create",
+    "DELETE /posts/:id": "delete",
+    "PUT /posts/:id/like": "like",
+    "DELETE /posts/:id/like": "unlike",
+    "POST /posts/:id/comment": "comment"
+  }
+}
