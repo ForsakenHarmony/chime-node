@@ -31,7 +31,7 @@ app.use(responseTime());
 app.use(compress());
 
 // body parser
-app.use(bodyparser({enableTypes: ['json']}));
+app.use(bodyparser({ enableTypes: ['json'] }));
 
 // boot
 load(app, router, __dirname + '/api');
@@ -42,6 +42,12 @@ app.use(router.allowedMethods());
 
 // static
 app.use(serve_static(join(__dirname + './../public')));
+
+// config TODO: extend
+app.context.secret = 'TESTsecret++##ok';
+
+// db
+require('./db/mongo').init(app);
 
 // start
 app.listen(3000, () =>

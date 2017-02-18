@@ -11,13 +11,6 @@ const readdir  = fs.readdirSync;
 /**
  * Load resources in `root` directory.
  *
- * TODO: move api.json (change name?)
- * bootstrapping into an npm module.
- *
- * TODO: adding .resources to config is lame,
- * but assuming no routes is also lame, change
- * me
- *
  * @param {Application} app
  * @param {Router} router
  * @param {String} root
@@ -51,7 +44,7 @@ function route(router, conf) {
   
   const mod = require(conf.directory);
   
-  for (const key in conf.routes) {
+  for (const key of Object.keys(conf.routes)) {
     const prop   = conf.routes[key];
     const method = key.split(' ')[0];
     const path   = key.split(' ')[1];

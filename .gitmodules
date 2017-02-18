@@ -1,0 +1,3 @@
+[submodule "packages/mongoose-polymorphic"]
+	path = packages/mongoose-polymorphic
+	url = https://github.com/ForsakenHarmony/mongoose-polymorphic.git
